@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="9.5" version="9.5" Modules="simple" RootPath="." Language="en" Id="{A131209A-78DB-4776-8ACA-004FF0127C29}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="FASMW.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://flatassembler.net/"/>
+    <ROW Property="Manufacturer" Value="fasm"/>
+    <ROW Property="ProductCode" Value="1033:{FC54E907-E7B9-4CFC-A072-47F52696D7C1} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="fasm"/>
+    <ROW Property="ProductVersion" Value="1.70.03" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{36EECBA5-0BFF-413F-9EBB-7BD1EFD992EC}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="API_Dir" Directory_Parent="INCLUDE_Dir" DefaultDir="API"/>
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="BEER_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="BEER"/>
+    <ROW Directory="DDRAW_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="DDRAW"/>
+    <ROW Directory="DIALOG_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="DIALOG"/>
+    <ROW Directory="DLL_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="DLL"/>
+    <ROW Directory="DOS_1_Dir" Directory_Parent="TOOLS_Dir" DefaultDir="DOS"/>
+    <ROW Directory="DOS_Dir" Directory_Parent="SOURCE_Dir" DefaultDir="DOS"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ENCODING_Dir" Directory_Parent="INCLUDE_Dir" DefaultDir="ENCODING"/>
+    <ROW Directory="EQUATES_Dir" Directory_Parent="INCLUDE_Dir" DefaultDir="EQUATES"/>
+    <ROW Directory="EXAMPLES_Dir" Directory_Parent="APPDIR" DefaultDir="EXAMPLES"/>
+    <ROW Directory="FASMD_Dir" Directory_Parent="IDE_Dir" DefaultDir="FASMD"/>
+    <ROW Directory="FASMW_Dir" Directory_Parent="IDE_Dir" DefaultDir="FASMW"/>
+    <ROW Directory="HELLO_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="HELLO"/>
+    <ROW Directory="IDE_Dir" Directory_Parent="SOURCE_Dir" DefaultDir="IDE"/>
+    <ROW Directory="INCLUDE_Dir" Directory_Parent="APPDIR" DefaultDir="INCLUDE"/>
+    <ROW Directory="LIBC_1_Dir" Directory_Parent="TOOLS_Dir" DefaultDir="LIBC"/>
+    <ROW Directory="LIBC_Dir" Directory_Parent="SOURCE_Dir" DefaultDir="LIBC"/>
+    <ROW Directory="LINUX_Dir" Directory_Parent="SOURCE_Dir" DefaultDir="LINUX"/>
+    <ROW Directory="MACRO_Dir" Directory_Parent="INCLUDE_Dir" DefaultDir="MACRO"/>
+    <ROW Directory="MANDEL_Dir" Directory_Parent="WIN64_Dir" DefaultDir="MANDEL"/>
+    <ROW Directory="MINIPAD_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="MINIPAD"/>
+    <ROW Directory="MSCOFF_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="MSCOFF"/>
+    <ROW Directory="OPENGL_1_Dir" Directory_Parent="WIN64_Dir" DefaultDir="OPENGL"/>
+    <ROW Directory="OPENGL_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="OPENGL"/>
+    <ROW Directory="PCOUNT_Dir" Directory_Parent="INCLUDE_Dir" DefaultDir="PCOUNT"/>
+    <ROW Directory="PE64DEMO_Dir" Directory_Parent="WIN64_Dir" DefaultDir="PE64DEMO"/>
+    <ROW Directory="PEDEMO_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="PEDEMO"/>
+    <ROW Directory="RESOURCE_Dir" Directory_Parent="FASMW_Dir" DefaultDir="RESOURCE"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="SOURCE_Dir" Directory_Parent="APPDIR" DefaultDir="SOURCE"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TEMPLATE_1_Dir" Directory_Parent="WIN64_Dir" DefaultDir="TEMPLATE"/>
+    <ROW Directory="TEMPLATE_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="TEMPLATE"/>
+    <ROW Directory="TOOLS_Dir" Directory_Parent="APPDIR" DefaultDir="TOOLS"/>
+    <ROW Directory="USECOM_1_Dir" Directory_Parent="WIN64_Dir" DefaultDir="USECOM"/>
+    <ROW Directory="USECOM_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="USECOM"/>
+    <ROW Directory="WIN32_1_Dir" Directory_Parent="TOOLS_Dir" DefaultDir="WIN32"/>
+    <ROW Directory="WIN32_Dir" Directory_Parent="SOURCE_Dir" DefaultDir="WIN32"/>
+    <ROW Directory="WIN64_Dir" Directory_Parent="EXAMPLES_Dir" DefaultDir="WIN64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="ADVAPI32.INC" ComponentId="{0DC9BFF4-06B7-46CD-8C42-B8A8C8989203}" Directory_="API_Dir" Attributes="0" KeyPath="ADVAPI32.INC" Type="0"/>
+    <ROW Component="ADVAPI32.INC_1" ComponentId="{4AFAE4F2-B9C4-4B89-9AAC-CCF1B8C5C609}" Directory_="PCOUNT_Dir" Attributes="0" KeyPath="ADVAPI32.INC_1" Type="0"/>
+    <ROW Component="ASMEDIT.ASH" ComponentId="{3CF3DAD4-48C3-4F78-A5F8-F5A2652CD036}" Directory_="FASMW_Dir" Attributes="0" KeyPath="ASMEDIT.ASH" Type="0"/>
+    <ROW Component="ASSEMBLE.INC" ComponentId="{1374172F-A747-43DF-A88E-72BA669B32AE}" Directory_="SOURCE_Dir" Attributes="0" KeyPath="ASSEMBLE.INC" Type="0"/>
+    <ROW Component="ASSIGN.BMP" ComponentId="{26989AFA-FA69-4FE4-AC70-4CCAED5763D0}" Directory_="RESOURCE_Dir" Attributes="0" KeyPath="ASSIGN.BMP" Type="0"/>
+    <ROW Component="BEER.ASM" ComponentId="{825D58AE-E12A-4580-A5AB-B45B0188907A}" Directory_="BEER_Dir" Attributes="0" KeyPath="BEER.ASM" Type="0"/>
+    <ROW Component="BEER.EXE" ComponentId="{1C3DB844-2159-41B6-BA73-65987E954B99}" Directory_="BEER_Dir" Attributes="0" KeyPath="BEER.EXE"/>
+    <ROW Component="BLOCKS.INC" ComponentId="{476891E2-764B-4B45-BC33-C52071EDDEAF}" Directory_="IDE_Dir" Attributes="0" KeyPath="BLOCKS.INC" Type="0"/>
+    <ROW Component="CCALL.INC" ComponentId="{165547C5-1199-4C02-95A0-10AE8AE0180E}" Directory_="LIBC_1_Dir" Attributes="0" KeyPath="CCALL.INC" Type="0"/>
+    <ROW Component="COM32.INC" ComponentId="{16FA2511-7F05-4124-B963-D4C66B465489}" Directory_="MACRO_Dir" Attributes="0" KeyPath="COM32.INC" Type="0"/>
+    <ROW Component="COMCTL32.INC" ComponentId="{5A520ED2-816C-492E-ACD8-28F08B20DD35}" Directory_="EQUATES_Dir" Attributes="0" KeyPath="COMCTL32.INC_1" Type="0"/>
+    <ROW Component="DDRAW.ASM" ComponentId="{F2F9ED80-171C-45AB-8AF3-A909966239C5}" Directory_="DDRAW_Dir" Attributes="0" KeyPath="DDRAW.ASM" Type="0"/>
+    <ROW Component="DDRAW.EXE" ComponentId="{B9DA1579-833D-4D28-A962-57E39CB3E123}" Directory_="DDRAW_Dir" Attributes="0" KeyPath="DDRAW.EXE"/>
+    <ROW Component="DDRAW64.INC" ComponentId="{AB4EDF7B-F709-45F9-B099-7877B5E8D493}" Directory_="MANDEL_Dir" Attributes="0" KeyPath="DDRAW64.INC" Type="0"/>
+    <ROW Component="DIALOG.ASM" ComponentId="{00A51A13-69FE-4A91-B651-76074CEAAB61}" Directory_="DIALOG_Dir" Attributes="0" KeyPath="DIALOG.ASM" Type="0"/>
+    <ROW Component="DIALOG.EXE" ComponentId="{7BC6353E-2A5C-46AE-88DC-29D67EC299E2}" Directory_="DIALOG_Dir" Attributes="0" KeyPath="DIALOG.EXE"/>
+    <ROW Component="ERRORMSG.ASM" ComponentId="{FE943B3F-6E02-464C-A6B9-E571925414C4}" Directory_="DLL_Dir" Attributes="0" KeyPath="ERRORMSG.ASM" Type="0"/>
+    <ROW Component="ERRORMSG.DLL" ComponentId="{8DDF0268-C4EA-405E-8DBB-B5B6C71AF142}" Directory_="DLL_Dir" Attributes="0" KeyPath="ERRORMSG.DLL"/>
+    <ROW Component="FASM.ASM" ComponentId="{7B3A6CC3-652B-43A4-91E3-228FFEF66437}" Directory_="DOS_Dir" Attributes="0" KeyPath="FASM.ASM" Type="0"/>
+    <ROW Component="FASM.ASM_1" ComponentId="{AD0CAC43-6734-4A2F-BB52-24171F7B1BBB}" Directory_="LIBC_Dir" Attributes="0" KeyPath="FASM.ASM_1" Type="0"/>
+    <ROW Component="FASM.ASM_2" ComponentId="{C662238C-D248-45F1-8FBE-3DE24209E85C}" Directory_="LINUX_Dir" Attributes="0" KeyPath="FASM.ASM_2" Type="0"/>
+    <ROW Component="FASM.ASM_3" ComponentId="{534F77D1-CF85-4229-AC77-FFACB5B9D295}" Directory_="WIN32_Dir" Attributes="0" KeyPath="FASM.ASM_3" Type="0"/>
+    <ROW Component="FASM.EXE" ComponentId="{8F63E612-1A95-474C-A127-3F6CEABC84CB}" Directory_="APPDIR" Attributes="0" KeyPath="FASM.EXE"/>
+    <ROW Component="FASM.PDF" ComponentId="{B79322F9-F5FC-4211-AC4B-C3965400A6EE}" Directory_="APPDIR" Attributes="0" KeyPath="FASM.PDF" Type="0"/>
+    <ROW Component="FASMD.ASM" ComponentId="{6D5B448E-E080-4350-838F-4A775BE23C5A}" Directory_="FASMD_Dir" Attributes="0" KeyPath="FASMD.ASM" Type="0"/>
+    <ROW Component="FASMW.EXE" ComponentId="{8162B348-64D6-4DD8-BF4E-06EE496F57F4}" Directory_="APPDIR" Attributes="0" KeyPath="FASMW.EXE"/>
+    <ROW Component="HELLO.ASM" ComponentId="{5BE4FD64-25B1-44F9-A09D-DE177DB9F42D}" Directory_="HELLO_Dir" Attributes="0" KeyPath="HELLO.ASM" Type="0"/>
+    <ROW Component="HELLO.EXE" ComponentId="{D3A222B9-988E-4EB3-9C6F-38CF1F9918EE}" Directory_="HELLO_Dir" Attributes="0" KeyPath="HELLO.EXE"/>
+    <ROW Component="LASTERR.EXE" ComponentId="{7FA024FC-A3D0-4AF3-B181-11E194F64F11}" Directory_="DLL_Dir" Attributes="0" KeyPath="LASTERR.EXE"/>
+    <ROW Component="LISTING.ASM" ComponentId="{4E06B0ED-47ED-43B6-BC34-48E41F79DEF7}" Directory_="DOS_1_Dir" Attributes="0" KeyPath="LISTING.ASM" Type="0"/>
+    <ROW Component="LISTING.ASM_1" ComponentId="{ABAB86B0-0211-4F37-83CA-7BA87ACDB752}" Directory_="WIN32_1_Dir" Attributes="0" KeyPath="LISTING.ASM_2" Type="0"/>
+    <ROW Component="LISTING.INC" ComponentId="{1A7F8EA9-9721-45B3-A250-2A0656114D59}" Directory_="TOOLS_Dir" Attributes="0" KeyPath="LISTING.INC" Type="0"/>
+    <ROW Component="MANDEL.EXE" ComponentId="{94D06817-098A-4BDA-AE0C-E0AC7E325CE1}" Directory_="MANDEL_Dir" Attributes="256" KeyPath="MANDEL.EXE"/>
+    <ROW Component="MINIPAD.ASM" ComponentId="{DFCDA4DD-508E-4BC0-9540-CBF62B5B28E9}" Directory_="MINIPAD_Dir" Attributes="0" KeyPath="MINIPAD.ASM" Type="0"/>
+    <ROW Component="MINIPAD.EXE" ComponentId="{81793046-BD48-4162-B804-C228E33774A8}" Directory_="MINIPAD_Dir" Attributes="0" KeyPath="MINIPAD.EXE"/>
+    <ROW Component="MSCOFF.ASM" ComponentId="{12B66BC2-6D1A-4C29-A14E-717807517C00}" Directory_="MSCOFF_Dir" Attributes="0" KeyPath="MSCOFF.ASM" Type="0"/>
+    <ROW Component="OPENGL.ASM" ComponentId="{612AED20-AA5A-4846-8DD4-2A7F0368F78C}" Directory_="OPENGL_Dir" Attributes="0" KeyPath="OPENGL.ASM" Type="0"/>
+    <ROW Component="OPENGL.ASM_1" ComponentId="{628F93C0-AF86-4ACA-A2B7-FB5A44EF94CE}" Directory_="OPENGL_1_Dir" Attributes="0" KeyPath="OPENGL.ASM_1" Type="0"/>
+    <ROW Component="OPENGL.EXE" ComponentId="{C8A90A2D-CD90-4B14-9FD4-E94BD78BAEEE}" Directory_="OPENGL_Dir" Attributes="0" KeyPath="OPENGL.EXE"/>
+    <ROW Component="OPENGL.EXE_1" ComponentId="{456DAAE9-A4AA-403B-A0F7-359032962503}" Directory_="OPENGL_1_Dir" Attributes="256" KeyPath="OPENGL.EXE_1"/>
+    <ROW Component="PE64DEMO.ASM" ComponentId="{931A1E4C-2366-4ABD-A27C-72505C5B40D8}" Directory_="PE64DEMO_Dir" Attributes="0" KeyPath="PE64DEMO.ASM" Type="0"/>
+    <ROW Component="PE64DEMO.EXE" ComponentId="{308B9184-7026-4B5D-B1E2-E0A8C97B3CDD}" Directory_="PE64DEMO_Dir" Attributes="256" KeyPath="PE64DEMO.EXE"/>
+    <ROW Component="PEDEMO.ASM" ComponentId="{A3253D90-8B4A-4951-8364-B7C01EF95486}" Directory_="PEDEMO_Dir" Attributes="0" KeyPath="PEDEMO.ASM" Type="0"/>
+    <ROW Component="PEDEMO.EXE" ComponentId="{52F7678D-903D-4B9A-9D50-607C3087CA65}" Directory_="PEDEMO_Dir" Attributes="0" KeyPath="PEDEMO.EXE"/>
+    <ROW Component="ProductInformation" ComponentId="{F356B3E1-0A79-4C0C-89E6-8A97D628CFD5}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{BFC09F28-0162-4F30-BFCF-ACF702F13841}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="TEMPLATE.ASM" ComponentId="{63209096-1467-424F-B6A2-CC9A5D8116B8}" Directory_="TEMPLATE_Dir" Attributes="0" KeyPath="TEMPLATE.ASM" Type="0"/>
+    <ROW Component="TEMPLATE.ASM_1" ComponentId="{19B7D56D-9288-4A7D-AFDD-8172F9420653}" Directory_="TEMPLATE_1_Dir" Attributes="0" KeyPath="TEMPLATE.ASM_1" Type="0"/>
+    <ROW Component="TEMPLATE.EXE" ComponentId="{3448E1FA-D11F-446F-9182-C1A7ECE426ED}" Directory_="TEMPLATE_Dir" Attributes="0" KeyPath="TEMPLATE.EXE"/>
+    <ROW Component="TEMPLATE.EXE_1" ComponentId="{A9EC26FE-3DC7-41F6-A808-D0960270B232}" Directory_="TEMPLATE_1_Dir" Attributes="256" KeyPath="TEMPLATE.EXE_1"/>
+    <ROW Component="USECOM.ASM" ComponentId="{E8FF79C6-1B02-4821-B8B7-2790840AC827}" Directory_="USECOM_Dir" Attributes="0" KeyPath="USECOM.ASM" Type="0"/>
+    <ROW Component="USECOM.ASM_1" ComponentId="{9ACB4ABA-80A7-4CFD-B05C-00D6F2F04D42}" Directory_="USECOM_1_Dir" Attributes="0" KeyPath="USECOM.ASM_1" Type="0"/>
+    <ROW Component="USECOM.EXE" ComponentId="{6FF62383-BD24-4EFB-9C52-DEA94090C7A5}" Directory_="USECOM_Dir" Attributes="0" KeyPath="USECOM.EXE"/>
+    <ROW Component="USECOM.EXE_1" ComponentId="{7357DFBC-C593-40A1-9526-C43A82A40379}" Directory_="USECOM_1_Dir" Attributes="256" KeyPath="USECOM.EXE_1"/>
+    <ROW Component="UTF8.INC" ComponentId="{DAF589E2-69BC-436F-B873-6432265432EE}" Directory_="ENCODING_Dir" Attributes="0" KeyPath="UTF8.INC" Type="0"/>
+    <ROW Component="WIN32A.INC" ComponentId="{D5A3D8AD-7BDE-4C14-8A50-5350D6AEDEC6}" Directory_="INCLUDE_Dir" Attributes="0" KeyPath="WIN32A.INC" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="ADVAPI32.INC ADVAPI32.INC_1 ASMEDIT.ASH ASSEMBLE.INC ASSIGN.BMP BEER.ASM BEER.EXE BLOCKS.INC CCALL.INC COM32.INC COMCTL32.INC DDRAW.ASM DDRAW.EXE DDRAW64.INC DIALOG.ASM DIALOG.EXE ERRORMSG.ASM ERRORMSG.DLL FASM.ASM FASM.ASM_1 FASM.ASM_2 FASM.ASM_3 FASM.EXE FASM.PDF FASMD.ASM FASMW.EXE HELLO.ASM HELLO.EXE LASTERR.EXE LISTING.ASM LISTING.ASM_1 LISTING.INC MANDEL.EXE MINIPAD.ASM MINIPAD.EXE MSCOFF.ASM OPENGL.ASM OPENGL.ASM_1 OPENGL.EXE OPENGL.EXE_1 PE64DEMO.ASM PE64DEMO.EXE PEDEMO.ASM PEDEMO.EXE ProductInformation SHORTCUTDIR TEMPLATE.ASM TEMPLATE.ASM_1 TEMPLATE.EXE TEMPLATE.EXE_1 USECOM.ASM USECOM.ASM_1 USECOM.EXE USECOM.EXE_1 UTF8.INC WIN32A.INC"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ADVAPI32.INC" Component_="ADVAPI32.INC" FileName="ADVAPI32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\ADVAPI32.INC" SelfReg="false" NextFile="COMCTL32.INC"/>
+    <ROW File="ADVAPI32.INC_1" Component_="ADVAPI32.INC_1" FileName="ADVAPI32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\ADVAPI32.INC" SelfReg="false" NextFile="COMCTL32.INC_2"/>
+    <ROW File="ASMEDIT.ASH" Component_="ASMEDIT.ASH" FileName="ASMEDIT.ASH" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMW\ASMEDIT.ASH" SelfReg="false" NextFile="ASMEDIT.INC"/>
+    <ROW File="ASMEDIT.INC" Component_="ASMEDIT.ASH" FileName="ASMEDIT.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMW\ASMEDIT.INC" SelfReg="false" NextFile="FASM.INC"/>
+    <ROW File="ASSEMBLE.INC" Component_="ASSEMBLE.INC" FileName="ASSEMBLE.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\ASSEMBLE.INC" SelfReg="false" NextFile="AVX.INC"/>
+    <ROW File="ASSIGN.BMP" Component_="ASSIGN.BMP" FileName="ASSIGN.BMP" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMW\RESOURCE\ASSIGN.BMP" SelfReg="false" NextFile="FASMW.ICO"/>
+    <ROW File="AVX.INC" Component_="ASSEMBLE.INC" FileName="AVX.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\AVX.INC" SelfReg="false" NextFile="FASM.ASM"/>
+    <ROW File="BEER.ASM" Component_="BEER.ASM" FileName="BEER.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\BEER\BEER.ASM" SelfReg="false" NextFile="BEER.EXE"/>
+    <ROW File="BEER.EXE" Component_="BEER.EXE" FileName="BEER.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\BEER\BEER.EXE" SelfReg="false" NextFile="DDRAW.ASM"/>
+    <ROW File="BLOCKS.INC" Component_="BLOCKS.INC" FileName="BLOCKS.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\BLOCKS.INC" SelfReg="false" NextFile="EDIT.INC"/>
+    <ROW File="CCALL.INC" Component_="CCALL.INC" FileName="CCALL.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\LIBC\CCALL.INC" SelfReg="false" NextFile="LISTING.ASM_1"/>
+    <ROW File="COM32.INC" Component_="COM32.INC" FileName="COM32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\COM32.INC" SelfReg="false" NextFile="COM64.INC"/>
+    <ROW File="COM64.INC" Component_="COM32.INC" FileName="COM64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\COM64.INC" SelfReg="false" NextFile="EXPORT.INC"/>
+    <ROW File="COMCTL32.INC" Component_="ADVAPI32.INC" FileName="COMCTL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\COMCTL32.INC" SelfReg="false" NextFile="COMDLG32.INC"/>
+    <ROW File="COMCTL32.INC_1" Component_="COMCTL32.INC" FileName="COMCTL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\COMCTL32.INC" SelfReg="false" NextFile="COMCTL64.INC"/>
+    <ROW File="COMCTL32.INC_2" Component_="ADVAPI32.INC_1" FileName="COMCTL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\COMCTL32.INC" SelfReg="false" NextFile="COMDLG32.INC_2"/>
+    <ROW File="COMCTL64.INC" Component_="COMCTL32.INC" FileName="COMCTL64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\COMCTL64.INC" SelfReg="false" NextFile="COMDLG32.INC_1"/>
+    <ROW File="COMDLG32.INC" Component_="ADVAPI32.INC" FileName="COMDLG32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\COMDLG32.INC" SelfReg="false" NextFile="GDI32.INC"/>
+    <ROW File="COMDLG32.INC_1" Component_="COMCTL32.INC" FileName="COMDLG32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\COMDLG32.INC" SelfReg="false" NextFile="COMDLG64.INC"/>
+    <ROW File="COMDLG32.INC_2" Component_="ADVAPI32.INC_1" FileName="COMDLG32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\COMDLG32.INC" SelfReg="false" NextFile="GDI32.INC_2"/>
+    <ROW File="COMDLG64.INC" Component_="COMCTL32.INC" FileName="COMDLG64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\COMDLG64.INC" SelfReg="false" NextFile="GDI32.INC_1"/>
+    <ROW File="DDRAW.ASM" Component_="DDRAW.ASM" FileName="DDRAW.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DDRAW\DDRAW.ASM" SelfReg="false" NextFile="DDRAW.EXE"/>
+    <ROW File="DDRAW.EXE" Component_="DDRAW.EXE" FileName="DDRAW.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DDRAW\DDRAW.EXE" SelfReg="false" NextFile="DDRAW.GIF"/>
+    <ROW File="DDRAW.GIF" Component_="DDRAW.ASM" FileName="DDRAW.GIF" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DDRAW\DDRAW.GIF" SelfReg="false" NextFile="DDRAW.INC"/>
+    <ROW File="DDRAW.INC" Component_="DDRAW.ASM" FileName="DDRAW.INC" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DDRAW\DDRAW.INC" SelfReg="false" NextFile="GIF87A.INC"/>
+    <ROW File="DDRAW64.INC" Component_="DDRAW64.INC" FileName="DDRAW64.INC" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\MANDEL\DDRAW64.INC" SelfReg="false" NextFile="MANDEL.ASM"/>
+    <ROW File="DIALOG.ASM" Component_="DIALOG.ASM" FileName="DIALOG.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DIALOG\DIALOG.ASM" SelfReg="false" NextFile="DIALOG.EXE"/>
+    <ROW File="DIALOG.EXE" Component_="DIALOG.EXE" FileName="DIALOG.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DIALOG\DIALOG.EXE" SelfReg="false" NextFile="ERRORMSG.ASM"/>
+    <ROW File="EDIT.INC" Component_="BLOCKS.INC" FileName="EDIT.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\EDIT.INC" SelfReg="false" NextFile="FASMD.ASM"/>
+    <ROW File="ERRORMSG.ASM" Component_="ERRORMSG.ASM" FileName="ERRORMSG.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DLL\ERRORMSG.ASM" SelfReg="false" NextFile="ERRORMSG.DLL"/>
+    <ROW File="ERRORMSG.DLL" Component_="ERRORMSG.DLL" FileName="ERRORMSG.DLL" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DLL\ERRORMSG.DLL" SelfReg="false" NextFile="LASTERR.ASM"/>
+    <ROW File="ERRORS.INC" Component_="ASSEMBLE.INC" FileName="ERRORS.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\ERRORS.INC" SelfReg="false" NextFile="EXPRCALC.INC"/>
+    <ROW File="EXPORT.INC" Component_="COM32.INC" FileName="EXPORT.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\EXPORT.INC" SelfReg="false" NextFile="IF.INC"/>
+    <ROW File="EXPRCALC.INC" Component_="ASSEMBLE.INC" FileName="EXPRCALC.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\EXPRCALC.INC" SelfReg="false" NextFile="EXPRPARS.INC"/>
+    <ROW File="EXPRPARS.INC" Component_="ASSEMBLE.INC" FileName="EXPRPARS.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\EXPRPARS.INC" SelfReg="false" NextFile="FORMATS.INC"/>
+    <ROW File="FASM.ASM" Component_="FASM.ASM" FileName="FASM.ASM" Attributes="0" SourcePath="fasmw17003\SOURCE\DOS\FASM.ASM" SelfReg="false" NextFile="MODES.INC"/>
+    <ROW File="FASM.ASM_1" Component_="FASM.ASM_1" FileName="FASM.ASM" Attributes="0" SourcePath="fasmw17003\SOURCE\LIBC\FASM.ASM" SelfReg="false" NextFile="SYSTEM.INC_1"/>
+    <ROW File="FASM.ASM_2" Component_="FASM.ASM_2" FileName="FASM.ASM" Attributes="0" SourcePath="fasmw17003\SOURCE\LINUX\FASM.ASM" SelfReg="false" NextFile="SYSTEM.INC_2"/>
+    <ROW File="FASM.ASM_3" Component_="FASM.ASM_3" FileName="FASM.ASM" Attributes="0" SourcePath="fasmw17003\SOURCE\WIN32\FASM.ASM" SelfReg="false" NextFile="SYSTEM.INC_3"/>
+    <ROW File="FASM.EXE" Component_="FASM.EXE" FileName="FASM.EXE" Attributes="0" SourcePath="fasmw17003\FASM.EXE" SelfReg="false" NextFile="FASM.PDF"/>
+    <ROW File="FASM.INC" Component_="ASMEDIT.ASH" FileName="FASM.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMW\FASM.INC" SelfReg="false" NextFile="FASMW.ASM"/>
+    <ROW File="FASM.PDF" Component_="FASM.PDF" FileName="FASM.PDF" Attributes="0" SourcePath="fasmw17003\FASM.PDF" SelfReg="false" NextFile="FASMW.EXE"/>
+    <ROW File="FASMD.ASM" Component_="FASMD.ASM" FileName="FASMD.ASM" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMD\FASMD.ASM" SelfReg="false" NextFile="ASMEDIT.ASH"/>
+    <ROW File="FASMW.ASM" Component_="ASMEDIT.ASH" FileName="FASMW.ASM" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMW\FASMW.ASM" SelfReg="false" NextFile="ASSIGN.BMP"/>
+    <ROW File="FASMW.EXE" Component_="FASMW.EXE" FileName="FASMW.EXE" Attributes="0" SourcePath="fasmw17003\FASMW.EXE" SelfReg="false" NextFile="ADVAPI32.INC"/>
+    <ROW File="FASMW.ICO" Component_="ASSIGN.BMP" FileName="FASMW.ICO" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\FASMW\RESOURCE\FASMW.ICO" SelfReg="false" NextFile="MEMORY.INC"/>
+    <ROW File="FORMATS.INC" Component_="ASSEMBLE.INC" FileName="FORMATS.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\FORMATS.INC" SelfReg="false" NextFile="BLOCKS.INC"/>
+    <ROW File="GDI32.INC" Component_="ADVAPI32.INC" FileName="GDI32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\GDI32.INC" SelfReg="false" NextFile="KERNEL32.INC"/>
+    <ROW File="GDI32.INC_1" Component_="COMCTL32.INC" FileName="GDI32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\GDI32.INC" SelfReg="false" NextFile="KERNEL32.INC_1"/>
+    <ROW File="GDI32.INC_2" Component_="ADVAPI32.INC_1" FileName="GDI32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\GDI32.INC" SelfReg="false" NextFile="KERNEL32.INC_2"/>
+    <ROW File="GIF87A.INC" Component_="DDRAW.ASM" FileName="GIF87A.INC" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DDRAW\GIF87A.INC" SelfReg="false" NextFile="DIALOG.ASM"/>
+    <ROW File="HELLO.ASM" Component_="HELLO.ASM" FileName="HELLO.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\HELLO\HELLO.ASM" SelfReg="false" NextFile="HELLO.EXE"/>
+    <ROW File="HELLO.EXE" Component_="HELLO.EXE" FileName="HELLO.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\HELLO\HELLO.EXE" SelfReg="false" NextFile="MINIPAD.ASM"/>
+    <ROW File="IF.INC" Component_="COM32.INC" FileName="IF.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\IF.INC" SelfReg="false" NextFile="IMPORT32.INC"/>
+    <ROW File="IMPORT32.INC" Component_="COM32.INC" FileName="IMPORT32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\IMPORT32.INC" SelfReg="false" NextFile="IMPORT64.INC"/>
+    <ROW File="IMPORT64.INC" Component_="COM32.INC" FileName="IMPORT64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\IMPORT64.INC" SelfReg="false" NextFile="MASM.INC"/>
+    <ROW File="KERNEL32.INC" Component_="ADVAPI32.INC" FileName="KERNEL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\KERNEL32.INC" SelfReg="false" NextFile="SHELL32.INC"/>
+    <ROW File="KERNEL32.INC_1" Component_="COMCTL32.INC" FileName="KERNEL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\KERNEL32.INC" SelfReg="false" NextFile="KERNEL64.INC"/>
+    <ROW File="KERNEL32.INC_2" Component_="ADVAPI32.INC_1" FileName="KERNEL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\KERNEL32.INC" SelfReg="false" NextFile="SHELL32.INC_2"/>
+    <ROW File="KERNEL64.INC" Component_="COMCTL32.INC" FileName="KERNEL64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\KERNEL64.INC" SelfReg="false" NextFile="SHELL32.INC_1"/>
+    <ROW File="LASTERR.ASM" Component_="ERRORMSG.ASM" FileName="LASTERR.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DLL\LASTERR.ASM" SelfReg="false" NextFile="LASTERR.EXE"/>
+    <ROW File="LASTERR.EXE" Component_="LASTERR.EXE" FileName="LASTERR.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\DLL\LASTERR.EXE" SelfReg="false" NextFile="HELLO.ASM"/>
+    <ROW File="LICENSE.TXT" Component_="FASM.PDF" FileName="LICENSE.TXT" Attributes="0" SourcePath="fasmw17003\LICENSE.TXT" SelfReg="false" NextFile="ASSEMBLE.INC"/>
+    <ROW File="LISTING.ASM" Component_="LISTING.ASM" FileName="LISTING.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\DOS\LISTING.ASM" SelfReg="false" NextFile="LOADER.INC"/>
+    <ROW File="LISTING.ASM_1" Component_="CCALL.INC" FileName="LISTING.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\LIBC\LISTING.ASM" SelfReg="false" NextFile="PREPSRC.ASM_1"/>
+    <ROW File="LISTING.ASM_2" Component_="LISTING.ASM_1" FileName="LISTING.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\WIN32\LISTING.ASM" SelfReg="false" NextFile="PREPSRC.ASM_2"/>
+    <ROW File="LISTING.INC" Component_="LISTING.INC" FileName="LISTING.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\LISTING.INC" SelfReg="false" NextFile="PREPSRC.INC"/>
+    <ROW File="LOADER.INC" Component_="LISTING.ASM" FileName="LOADER.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\DOS\LOADER.INC" SelfReg="false" NextFile="PREPSRC.ASM"/>
+    <ROW File="MANDEL.ASM" Component_="DDRAW64.INC" FileName="MANDEL.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\MANDEL\MANDEL.ASM" SelfReg="false" NextFile="MANDEL.EXE"/>
+    <ROW File="MANDEL.EXE" Component_="MANDEL.EXE" FileName="MANDEL.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\MANDEL\MANDEL.EXE" SelfReg="false" NextFile="OPENGL.ASM_1"/>
+    <ROW File="MASM.INC" Component_="COM32.INC" FileName="MASM.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\MASM.INC" SelfReg="false" NextFile="PROC32.INC"/>
+    <ROW File="MEMORY.INC" Component_="BLOCKS.INC" FileName="MEMORY.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\MEMORY.INC" SelfReg="false" NextFile="NAVIGATE.INC"/>
+    <ROW File="MESSAGES.INC" Component_="ASSEMBLE.INC" FileName="MESSAGES.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\MESSAGES.INC" SelfReg="false" NextFile="PARSER.INC"/>
+    <ROW File="MINIPAD.ASM" Component_="MINIPAD.ASM" FileName="MINIPAD.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\MINIPAD\MINIPAD.ASM" SelfReg="false" NextFile="MINIPAD.EXE"/>
+    <ROW File="MINIPAD.EXE" Component_="MINIPAD.EXE" FileName="MINIPAD.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\MINIPAD\MINIPAD.EXE" SelfReg="false" NextFile="MINIPAD.ICO"/>
+    <ROW File="MINIPAD.ICO" Component_="MINIPAD.ASM" FileName="MINIPAD.ICO" Attributes="0" SourcePath="fasmw17003\EXAMPLES\MINIPAD\MINIPAD.ICO" SelfReg="false" NextFile="MSCOFF.ASM"/>
+    <ROW File="MODES.INC" Component_="FASM.ASM" FileName="MODES.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\DOS\MODES.INC" SelfReg="false" NextFile="SYSTEM.INC"/>
+    <ROW File="MSCOFF.ASM" Component_="MSCOFF.ASM" FileName="MSCOFF.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\MSCOFF\MSCOFF.ASM" SelfReg="false" NextFile="MSCOFF.OBJ"/>
+    <ROW File="MSCOFF.OBJ" Component_="MSCOFF.ASM" FileName="MSCOFF.OBJ" Attributes="0" SourcePath="fasmw17003\EXAMPLES\MSCOFF\MSCOFF.OBJ" SelfReg="false" NextFile="OPENGL.ASM"/>
+    <ROW File="NAVIGATE.INC" Component_="BLOCKS.INC" FileName="NAVIGATE.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\NAVIGATE.INC" SelfReg="false" NextFile="SEARCH.INC"/>
+    <ROW File="OPENGL.ASM" Component_="OPENGL.ASM" FileName="OPENGL.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\OPENGL\OPENGL.ASM" SelfReg="false" NextFile="OPENGL.EXE"/>
+    <ROW File="OPENGL.ASM_1" Component_="OPENGL.ASM_1" FileName="OPENGL.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\OPENGL\OPENGL.ASM" SelfReg="false" NextFile="OPENGL.EXE_1"/>
+    <ROW File="OPENGL.EXE" Component_="OPENGL.EXE" FileName="OPENGL.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\OPENGL\OPENGL.EXE" SelfReg="false" NextFile="OPENGL.INC"/>
+    <ROW File="OPENGL.EXE_1" Component_="OPENGL.EXE_1" FileName="OPENGL.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\OPENGL\OPENGL.EXE" SelfReg="false" NextFile="PE64DEMO.ASM"/>
+    <ROW File="OPENGL.INC" Component_="OPENGL.ASM" FileName="OPENGL.INC" Attributes="0" SourcePath="fasmw17003\EXAMPLES\OPENGL\OPENGL.INC" SelfReg="false" NextFile="PEDEMO.ASM"/>
+    <ROW File="PARSER.INC" Component_="ASSEMBLE.INC" FileName="PARSER.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\PARSER.INC" SelfReg="false" NextFile="PREPROCE.INC"/>
+    <ROW File="PE64DEMO.ASM" Component_="PE64DEMO.ASM" FileName="PE64DEMO.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\PE64DEMO\PE64DEMO.ASM" SelfReg="false" NextFile="PE64DEMO.EXE"/>
+    <ROW File="PE64DEMO.EXE" Component_="PE64DEMO.EXE" FileName="PE64DEMO.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\PE64DEMO\PE64DEMO.EXE" SelfReg="false" NextFile="TEMPLATE.ASM_1"/>
+    <ROW File="PEDEMO.ASM" Component_="PEDEMO.ASM" FileName="PEDEMO.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\PEDEMO\PEDEMO.ASM" SelfReg="false" NextFile="PEDEMO.EXE"/>
+    <ROW File="PEDEMO.EXE" Component_="PEDEMO.EXE" FileName="PEDEMO.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\PEDEMO\PEDEMO.EXE" SelfReg="false" NextFile="TEMPLATE.ASM"/>
+    <ROW File="PREPROCE.INC" Component_="ASSEMBLE.INC" FileName="PREPROCE.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\PREPROCE.INC" SelfReg="false" NextFile="SYMBDUMP.INC"/>
+    <ROW File="PREPSRC.ASM" Component_="LISTING.ASM" FileName="PREPSRC.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\DOS\PREPSRC.ASM" SelfReg="false" NextFile="SYMBOLS.ASM"/>
+    <ROW File="PREPSRC.ASM_1" Component_="CCALL.INC" FileName="PREPSRC.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\LIBC\PREPSRC.ASM" SelfReg="false" NextFile="SYMBOLS.ASM_1"/>
+    <ROW File="PREPSRC.ASM_2" Component_="LISTING.ASM_1" FileName="PREPSRC.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\WIN32\PREPSRC.ASM" SelfReg="false" NextFile="SYMBOLS.ASM_2"/>
+    <ROW File="PREPSRC.INC" Component_="LISTING.INC" FileName="PREPSRC.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\PREPSRC.INC" SelfReg="false" NextFile="README.TXT"/>
+    <ROW File="PROC32.INC" Component_="COM32.INC" FileName="PROC32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\PROC32.INC" SelfReg="false" NextFile="PROC64.INC"/>
+    <ROW File="PROC64.INC" Component_="COM32.INC" FileName="PROC64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\PROC64.INC" SelfReg="false" NextFile="RESOURCE.INC"/>
+    <ROW File="README.TXT" Component_="LISTING.INC" FileName="README.TXT" Attributes="0" SourcePath="fasmw17003\TOOLS\README.TXT" SelfReg="false" NextFile="SYMBOLS.INC"/>
+    <ROW File="RESOURCE.INC" Component_="COM32.INC" FileName="RESOURCE.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\RESOURCE.INC" SelfReg="false" NextFile="STRUCT.INC"/>
+    <ROW File="SEARCH.INC" Component_="BLOCKS.INC" FileName="SEARCH.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\SEARCH.INC" SelfReg="false" NextFile="UNDO.INC"/>
+    <ROW File="SHELL32.INC" Component_="ADVAPI32.INC" FileName="SHELL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\SHELL32.INC" SelfReg="false" NextFile="USER32.INC"/>
+    <ROW File="SHELL32.INC_1" Component_="COMCTL32.INC" FileName="SHELL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\SHELL32.INC" SelfReg="false" NextFile="SHELL64.INC"/>
+    <ROW File="SHELL32.INC_2" Component_="ADVAPI32.INC_1" FileName="SHELL32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\SHELL32.INC" SelfReg="false" NextFile="USER32.INC_2"/>
+    <ROW File="SHELL64.INC" Component_="COMCTL32.INC" FileName="SHELL64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\SHELL64.INC" SelfReg="false" NextFile="USER32.INC_1"/>
+    <ROW File="STRUCT.INC" Component_="COM32.INC" FileName="STRUCT.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\MACRO\STRUCT.INC" SelfReg="false" NextFile="ADVAPI32.INC_1"/>
+    <ROW File="SYMBDUMP.INC" Component_="ASSEMBLE.INC" FileName="SYMBDUMP.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\SYMBDUMP.INC" SelfReg="false" NextFile="TABLES.INC"/>
+    <ROW File="SYMBOLS.ASM" Component_="LISTING.ASM" FileName="SYMBOLS.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\DOS\SYMBOLS.ASM" SelfReg="false" NextFile="SYSTEM.INC_4"/>
+    <ROW File="SYMBOLS.ASM_1" Component_="CCALL.INC" FileName="SYMBOLS.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\LIBC\SYMBOLS.ASM" SelfReg="false" NextFile="SYSTEM.INC_5"/>
+    <ROW File="SYMBOLS.ASM_2" Component_="LISTING.ASM_1" FileName="SYMBOLS.ASM" Attributes="0" SourcePath="fasmw17003\TOOLS\WIN32\SYMBOLS.ASM" SelfReg="false" NextFile="SYSTEM.INC_6"/>
+    <ROW File="SYMBOLS.INC" Component_="LISTING.INC" FileName="SYMBOLS.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\SYMBOLS.INC" SelfReg="false" NextFile="LISTING.ASM_2"/>
+    <ROW File="SYSTEM.INC" Component_="FASM.ASM" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\DOS\SYSTEM.INC" SelfReg="false" NextFile="ERRORS.INC"/>
+    <ROW File="SYSTEM.INC_1" Component_="FASM.ASM_1" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\LIBC\SYSTEM.INC" SelfReg="false" NextFile="FASM.ASM_2"/>
+    <ROW File="SYSTEM.INC_2" Component_="FASM.ASM_2" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\LINUX\SYSTEM.INC" SelfReg="false" NextFile="MESSAGES.INC"/>
+    <ROW File="SYSTEM.INC_3" Component_="FASM.ASM_3" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\WIN32\SYSTEM.INC" SelfReg="false" NextFile="X86_64.INC"/>
+    <ROW File="SYSTEM.INC_4" Component_="LISTING.ASM" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\DOS\SYSTEM.INC" SelfReg="false" NextFile="CCALL.INC"/>
+    <ROW File="SYSTEM.INC_5" Component_="CCALL.INC" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\LIBC\SYSTEM.INC" SelfReg="false" NextFile="LISTING.INC"/>
+    <ROW File="SYSTEM.INC_6" Component_="LISTING.ASM_1" FileName="SYSTEM.INC" Attributes="0" SourcePath="fasmw17003\TOOLS\WIN32\SYSTEM.INC" SelfReg="false" NextFile="WHATSNEW.TXT"/>
+    <ROW File="TABLES.INC" Component_="ASSEMBLE.INC" FileName="TABLES.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\TABLES.INC" SelfReg="false" NextFile="VARIABLE.INC_1"/>
+    <ROW File="TEMPLATE.ASM" Component_="TEMPLATE.ASM" FileName="TEMPLATE.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\TEMPLATE\TEMPLATE.ASM" SelfReg="false" NextFile="TEMPLATE.EXE"/>
+    <ROW File="TEMPLATE.ASM_1" Component_="TEMPLATE.ASM_1" FileName="TEMPLATE.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\TEMPLATE\TEMPLATE.ASM" SelfReg="false" NextFile="TEMPLATE.EXE_1"/>
+    <ROW File="TEMPLATE.EXE" Component_="TEMPLATE.EXE" FileName="TEMPLATE.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\TEMPLATE\TEMPLATE.EXE" SelfReg="false" NextFile="USECOM.ASM"/>
+    <ROW File="TEMPLATE.EXE_1" Component_="TEMPLATE.EXE_1" FileName="TEMPLATE.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\TEMPLATE\TEMPLATE.EXE" SelfReg="false" NextFile="USECOM.ASM_1"/>
+    <ROW File="UNDO.INC" Component_="BLOCKS.INC" FileName="UNDO.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\UNDO.INC" SelfReg="false" NextFile="VARIABLE.INC"/>
+    <ROW File="USECOM.ASM" Component_="USECOM.ASM" FileName="USECOM.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\USECOM\USECOM.ASM" SelfReg="false" NextFile="USECOM.EXE"/>
+    <ROW File="USECOM.ASM_1" Component_="USECOM.ASM_1" FileName="USECOM.ASM" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\USECOM\USECOM.ASM" SelfReg="false" NextFile="USECOM.EXE_1"/>
+    <ROW File="USECOM.EXE" Component_="USECOM.EXE" FileName="USECOM.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\USECOM\USECOM.EXE" SelfReg="false" NextFile="DDRAW64.INC"/>
+    <ROW File="USECOM.EXE_1" Component_="USECOM.EXE_1" FileName="USECOM.EXE" Attributes="0" SourcePath="fasmw17003\EXAMPLES\WIN64\USECOM\USECOM.EXE" SelfReg="false" NextFile="FASM.EXE"/>
+    <ROW File="USER32.INC" Component_="ADVAPI32.INC" FileName="USER32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\USER32.INC" SelfReg="false" NextFile="WSOCK32.INC"/>
+    <ROW File="USER32.INC_1" Component_="COMCTL32.INC" FileName="USER32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\USER32.INC" SelfReg="false" NextFile="USER64.INC"/>
+    <ROW File="USER32.INC_2" Component_="ADVAPI32.INC_1" FileName="USER32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\USER32.INC" SelfReg="false" NextFile="WSOCK32.INC_2"/>
+    <ROW File="USER64.INC" Component_="COMCTL32.INC" FileName="USER64.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\USER64.INC" SelfReg="false" NextFile="WSOCK32.INC_1"/>
+    <ROW File="UTF8.INC" Component_="UTF8.INC" FileName="UTF8.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\UTF8.INC" SelfReg="false" NextFile="WIN1250.INC"/>
+    <ROW File="VARIABLE.INC" Component_="BLOCKS.INC" FileName="VARIABLE.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\IDE\VARIABLE.INC" SelfReg="false" NextFile="FASM.ASM_1"/>
+    <ROW File="VARIABLE.INC_1" Component_="ASSEMBLE.INC" FileName="VARIABLE.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\VARIABLE.INC" SelfReg="false" NextFile="VERSION.INC"/>
+    <ROW File="VERSION.INC" Component_="ASSEMBLE.INC" FileName="VERSION.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\VERSION.INC" SelfReg="false" NextFile="FASM.ASM_3"/>
+    <ROW File="WHATSNEW.TXT" Component_="FASM.PDF" FileName="WHATSNEW.TXT" Attributes="0" SourcePath="fasmw17003\WHATSNEW.TXT" SelfReg="false"/>
+    <ROW File="WIN1250.INC" Component_="UTF8.INC" FileName="WIN1250.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1250.INC" SelfReg="false" NextFile="WIN1251.INC"/>
+    <ROW File="WIN1251.INC" Component_="UTF8.INC" FileName="WIN1251.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1251.INC" SelfReg="false" NextFile="WIN1252.INC"/>
+    <ROW File="WIN1252.INC" Component_="UTF8.INC" FileName="WIN1252.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1252.INC" SelfReg="false" NextFile="WIN1253.INC"/>
+    <ROW File="WIN1253.INC" Component_="UTF8.INC" FileName="WIN1253.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1253.INC" SelfReg="false" NextFile="WIN1254.INC"/>
+    <ROW File="WIN1254.INC" Component_="UTF8.INC" FileName="WIN1254.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1254.INC" SelfReg="false" NextFile="WIN1255.INC"/>
+    <ROW File="WIN1255.INC" Component_="UTF8.INC" FileName="WIN1255.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1255.INC" SelfReg="false" NextFile="WIN1256.INC"/>
+    <ROW File="WIN1256.INC" Component_="UTF8.INC" FileName="WIN1256.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1256.INC" SelfReg="false" NextFile="WIN1257.INC"/>
+    <ROW File="WIN1257.INC" Component_="UTF8.INC" FileName="WIN1257.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1257.INC" SelfReg="false" NextFile="WIN1258.INC"/>
+    <ROW File="WIN1258.INC" Component_="UTF8.INC" FileName="WIN1258.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN1258.INC" SelfReg="false" NextFile="WIN874.INC"/>
+    <ROW File="WIN32A.INC" Component_="WIN32A.INC" FileName="WIN32A.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN32A.INC" SelfReg="false" NextFile="WIN32AX.INC"/>
+    <ROW File="WIN32AX.INC" Component_="WIN32A.INC" FileName="WIN32AX.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN32AX.INC" SelfReg="false" NextFile="WIN32AXP.INC"/>
+    <ROW File="WIN32AXP.INC" Component_="WIN32A.INC" FileName="WIN32AXP.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN32AXP.INC" SelfReg="false" NextFile="WIN32W.INC"/>
+    <ROW File="WIN32W.INC" Component_="WIN32A.INC" FileName="WIN32W.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN32W.INC" SelfReg="false" NextFile="WIN32WX.INC"/>
+    <ROW File="WIN32WX.INC" Component_="WIN32A.INC" FileName="WIN32WX.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN32WX.INC" SelfReg="false" NextFile="WIN32WXP.INC"/>
+    <ROW File="WIN32WXP.INC" Component_="WIN32A.INC" FileName="WIN32WXP.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN32WXP.INC" SelfReg="false" NextFile="WIN64A.INC"/>
+    <ROW File="WIN64A.INC" Component_="WIN32A.INC" FileName="WIN64A.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN64A.INC" SelfReg="false" NextFile="WIN64AX.INC"/>
+    <ROW File="WIN64AX.INC" Component_="WIN32A.INC" FileName="WIN64AX.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN64AX.INC" SelfReg="false" NextFile="WIN64AXP.INC"/>
+    <ROW File="WIN64AXP.INC" Component_="WIN32A.INC" FileName="WIN64AXP.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN64AXP.INC" SelfReg="false" NextFile="WIN64W.INC"/>
+    <ROW File="WIN64W.INC" Component_="WIN32A.INC" FileName="WIN64W.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN64W.INC" SelfReg="false" NextFile="WIN64WX.INC"/>
+    <ROW File="WIN64WX.INC" Component_="WIN32A.INC" FileName="WIN64WX.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN64WX.INC" SelfReg="false" NextFile="WIN64WXP.INC"/>
+    <ROW File="WIN64WXP.INC" Component_="WIN32A.INC" FileName="WIN64WXP.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\WIN64WXP.INC" SelfReg="false" NextFile="LICENSE.TXT"/>
+    <ROW File="WIN874.INC" Component_="UTF8.INC" FileName="WIN874.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\ENCODING\WIN874.INC" SelfReg="false" NextFile="COMCTL32.INC_1"/>
+    <ROW File="WSOCK32.INC" Component_="ADVAPI32.INC" FileName="WSOCK32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\API\WSOCK32.INC" SelfReg="false" NextFile="UTF8.INC"/>
+    <ROW File="WSOCK32.INC_1" Component_="COMCTL32.INC" FileName="WSOCK32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\EQUATES\WSOCK32.INC" SelfReg="false" NextFile="COM32.INC"/>
+    <ROW File="WSOCK32.INC_2" Component_="ADVAPI32.INC_1" FileName="WSOCK32.INC" Attributes="0" SourcePath="fasmw17003\INCLUDE\PCOUNT\WSOCK32.INC" SelfReg="false" NextFile="WIN32A.INC"/>
+    <ROW File="X86_64.INC" Component_="ASSEMBLE.INC" FileName="X86_64.INC" Attributes="0" SourcePath="fasmw17003\SOURCE\X86_64.INC" SelfReg="false" NextFile="LISTING.ASM"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." PackageFileName="fasm-1.70.03" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Type="1" Source="aicustact.dll" Target="GetLocalizedCredentials"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder][ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
+    <ROW Environment="PATH" Name="=-PATH" Value="[~];[APPDIR]" Component_="DIALOG.ASM"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="FASMW.exe" SourcePath="fasmw17003\FASMW.EXE" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="FASMW.EXE" Directory_="SHORTCUTDIR" Name="FASMW.EXE" Component_="FASMW.EXE" Target="[#FASMW.EXE]" Description="FASMW.EXE" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="FASMW.EXE_1" Directory_="DesktopFolder" Name="FASMW.EXE" Component_="FASMW.EXE" Target="[#FASMW.EXE]" Description="FASMW.EXE" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
